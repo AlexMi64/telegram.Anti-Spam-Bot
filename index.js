@@ -5,9 +5,6 @@ const db = require("./db");
 const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
-// Время на проверку в минутах
-const VERIFY_TIMEOUT = 5;
-
 // Активные таймеры верификации для их отмены
 const activeVerifyTimers = new Map();
 
